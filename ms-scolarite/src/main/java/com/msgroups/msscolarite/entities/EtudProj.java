@@ -11,6 +11,6 @@ public interface EtudProj {
     public String getNomEtudiant();
 
     @Value("#{target.etablissement.nom}")
-    public String getNomEblissement();
+    public String getNomEtablissement();
 
 }

@@ -39,7 +39,7 @@ public class Controller {
     public Formation getFormationWithEtudiant(@PathVariable("id") Long id) {
         Formation f = formationRep.findById(id).get();
 //        f.setEtudiant(etudiantProxy.getEtudiants(id,""));
-        f.setEtudiant(new ArrayList<>(
+        f.setEtudiants(new ArrayList<>(
                 etudiantProxy.getEtudiants(
                         id,"projectionFormation"
                 ).getContent()));

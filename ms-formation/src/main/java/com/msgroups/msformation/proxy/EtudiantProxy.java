@@ -12,7 +12,7 @@ import java.util.Collection;
 @FeignClient(name = "ms-scolarite",url = "localhost:8080")
 public interface EtudiantProxy {
     @GetMapping("/etudiants/search/findByIdFormation")
-    public CollectionModel<Etudiant> getEtudiants(@RequestParam("idF") Long idf,
+    public CollectionModel<Etudiant> getEtudiants(@RequestParam("idf") Long idf,
                                                   @RequestParam("projection") String projection
                                              );
 }

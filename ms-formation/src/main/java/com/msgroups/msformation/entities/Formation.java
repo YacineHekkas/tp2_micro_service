@@ -25,7 +25,7 @@ public class Formation {
     private int duree;
 
     @Transient
-    private Collection<Etudiant> etudiant;
+    private Collection<Etudiant> etudiants;
 
 }
 

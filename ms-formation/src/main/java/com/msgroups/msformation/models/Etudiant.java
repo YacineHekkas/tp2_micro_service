@@ -6,5 +6,5 @@ import lombok.Data;
 public class Etudiant {
 
     private String nomEtudiant;
-    private String nomEblissement;
+    private String nomEtablissement;
 }

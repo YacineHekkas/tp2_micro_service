@@ -39,7 +39,6 @@ public class Etudiant {
 
     private Long idFormation;
 
-
     @Transient
     private Formation formation;
 
