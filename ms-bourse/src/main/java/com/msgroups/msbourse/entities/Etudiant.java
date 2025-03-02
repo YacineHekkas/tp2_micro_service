@@ -16,12 +16,10 @@ public class Etudiant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idEtudiant;
 
-
     @Column(unique = true, nullable = false)
     private Long ncompteccp;
 
     private Float salaireParent;
-
     private Boolean situationImpot;
 
     @ManyToOne

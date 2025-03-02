@@ -34,7 +34,6 @@ public class Controller {
 //    public Formation getFormationById(@PathVariable("id") Long id) {
 //        return formationRep.findById(id).get();
 //    }
-
     @GetMapping("/formation/{id}")
     public Formation getFormationWithEtudiant(@PathVariable("id") Long id) {
         Formation f = formationRep.findById(id).get();
@@ -44,8 +43,6 @@ public class Controller {
                         id,"projectionFormation"
                 ).getContent()));
         return f;
-
     }
-
 
 }

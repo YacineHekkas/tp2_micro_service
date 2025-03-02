@@ -20,10 +20,8 @@ public class Controller {
     EtudiantRep etudiantRep;
     @Autowired
     EtablissementRep etablissementRep;
-
     @Autowired
     FormationProxy formationProxy;
-
 
     @GetMapping("/etudiant/{ide}")
     public Etudiant getEtudiantWithFormation(@PathVariable("ide") Long ide) {
@@ -32,7 +30,4 @@ public class Controller {
         e.setFormation(f1);
         return e;
     }
-
-
-
 }

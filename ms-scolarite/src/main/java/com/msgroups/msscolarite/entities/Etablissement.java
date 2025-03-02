@@ -19,7 +19,7 @@ public class Etablissement {
     private String nom;
 
 
-    @ToString.Exclude
+    @ToString.Exclude // --> Exclure de toString pour éviter la récursion infinie
     @OneToMany(mappedBy = "etablissement")
     private List<Etudiant> etudiantList;
 }
